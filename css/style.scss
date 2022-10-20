@@ -1382,8 +1382,8 @@ footer {
         }
 
         p {
-            font-size: 18px;
-            margin: 30px 4px;
+            font-size: 14px;
+            margin: 20px 4px;
             text-align: center;
         }
 
@@ -1740,5 +1740,11 @@ footer {
                 }
             }
         }
+    }
+}
+
+@media (max-width: 376px) {
+    .header .bottom{
+        padding: 34% 5% 5%;
     }
 }
