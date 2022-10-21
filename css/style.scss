@@ -17,6 +17,7 @@ body {
 
 body {
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch
 }
 
 .img_responsive {
@@ -608,7 +609,8 @@ textarea {
     }
 
     .marquee>img {
-        width: 120px;
+        height: 40px !important;
+        width: auto!important;
         margin: 0 40px;
     }
 
@@ -663,7 +665,7 @@ textarea {
             color: $orange;
         }
 
-        button {
+        a {
             font-size: 14px;
             padding: 10px 24px;
             font-weight: 500;
@@ -673,6 +675,8 @@ textarea {
             background-color: $orange;
             line-height: 21px;
             cursor: pointer;
+            text-decoration: none;
+            text-align: center;
         }
     }
 
@@ -727,7 +731,6 @@ footer {
             color: #fff;
             background-color: $orange;
             padding: 12px 40px;
-            text-transform: uppercase;
             border: none;
             border-radius: 4px;
             cursor: pointer;
@@ -1020,7 +1023,6 @@ footer {
         }
 
         .marquee>img {
-            width: 120px !important;
             margin: 0 30px;
         }
     }
@@ -1050,6 +1052,7 @@ footer {
             padding: 8px;
         }
     }
+
     .header {
         .robot {
             width: 42%;
@@ -1070,7 +1073,7 @@ footer {
                 bottom: -70px;
             }
 
-            
+
         }
 
         .bottom {
@@ -1264,7 +1267,6 @@ footer {
         }
 
         .marquee>img {
-            width: 120px !important;
             margin: 0 30px;
         }
     }
@@ -1294,15 +1296,17 @@ footer {
             color: #fff;
             margin-bottom: 20px;
         }
-        .right{
-            .detail{
-                p{
+
+        .right {
+            .detail {
+                p {
                     font-size: 14px;
                     line-height: 21px;
                 }
             }
-            .countries{
-                p{
+
+            .countries {
+                p {
                     font-size: 14px;
                 }
             }
@@ -1327,16 +1331,16 @@ footer {
 
                 .social_links {
                     .box {
-                        width: 30px;
-                        height: 30px;
-                        padding: 8px;
+                        width: 24px;
+                        height: 24px;
+                        padding: 6px;
                     }
                 }
             }
 
             h1 {
-                font-size: 30px;
-                text-align: center;
+                font-size: 36px;
+                text-align: left;
             }
 
             .form_box {
@@ -1354,7 +1358,7 @@ footer {
             margin-top: 230px;
 
             .points_container {
-                width: 80%;
+                width: 66%;
                 margin: 0 auto;
 
                 .points_box {
@@ -1362,12 +1366,12 @@ footer {
                         margin-right: 20px;
 
                         img {
-                            width: 50px;
+                            width: 40px;
                         }
                     }
 
                     .content_box {
-                        font-size: 20px;
+                        font-size: 18px;
                     }
                 }
             }
@@ -1377,14 +1381,18 @@ footer {
     .services_container {
         h1 {
             font-size: 24px;
-            padding: 0;
-            text-align: center !important;
+            padding: 0 4%;
+            text-align: left !important;
+        }
+
+        .text_box {
+            padding: 0 4%;
         }
 
         p {
             font-size: 14px;
-            margin: 20px 4px;
-            text-align: center;
+            margin: 6px 0 20px !important;
+            text-align: left;
         }
 
         .service_box {
@@ -1497,6 +1505,7 @@ footer {
                             width: 22px;
                             height: 22px;
                             min-width: 22px;
+
                             svg {
                                 width: 14px;
                             }
@@ -1512,7 +1521,8 @@ footer {
 
         h1 {
             font-size: 24px;
-            text-align: center;
+            text-align: left;
+            padding: 0 4%;
             margin-bottom: 30px;
         }
 
@@ -1540,13 +1550,14 @@ footer {
                 background-size: contain;
                 background-repeat: no-repeat;
                 position: absolute;
-                bottom: 0px;
+                bottom: 30px;
                 right: 0;
             }
 
             .img_container {
                 padding: 30px 20px 0;
                 width: 100%;
+
                 .image_flip_card {
                     &.four {
                         width: 16.318vw;
@@ -1604,7 +1615,7 @@ footer {
 
             .points_container {
                 width: 100%;
-                padding: 5%;
+                padding: 5% 5% 10%;
 
                 .points_box {
                     margin-bottom: 30px;
@@ -1641,17 +1652,18 @@ footer {
 
         .marquee-wrapper {
             &:first-of-type {
-                margin-bottom: 30px;
+                margin-bottom: 50px;
             }
         }
 
         .marquee>img {
-            width: 100px !important;
             margin: 0 20px;
         }
     }
 
     .presentation_container {
+        padding: 12% 4%;
+
         .top {
             h2 {
                 font-size: 24px;
@@ -1665,19 +1677,29 @@ footer {
     }
 
     footer {
+        flex-direction: column;
+        padding: 5% 4%;
+
         p {
             font-size: 14px;
         }
 
         .left {
-            width: 50%;
-            padding-right: 10px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            justify-content: space-between;
+            padding: 0;
+
+            p {
+                display: none;
+            }
 
             h4 {
                 font-size: 20px;
-                &:nth-of-type(2){
-                    display: block;
-                }
+                margin-bottom: 0;
+                margin-right: 20px;
+                color: #fff;
             }
 
             .form_box {
@@ -1693,20 +1715,17 @@ footer {
                     }
 
                     &:nth-of-type(2) {
-                        margin: 30px 0 50px;
                         display: block;
+                        margin: 0;
+                        padding: 10px 20px;
                     }
                 }
             }
         }
 
         .right {
-            width: 50%;
-            padding-left: 10px;
-
-            h4 {
-                display: none;
-            }
+            padding: 0;
+            width: 100%;
 
             .detail {
                 grid-template-columns: 30px auto;
@@ -1718,20 +1737,29 @@ footer {
 
                 p {
                     font-size: 14px;
+                    width: 67%;
                 }
             }
 
             .countries {
-                padding-left: 30px;
-
+                padding-left: 0px;
+                column-gap: 24px;
                 p {
                     font-size: 14px;
                     margin-bottom: 20px;
+                    &:nth-child(2){
+                        &::after{
+                            right: -14px;
+                        }
+                        &::before{
+                            left: -14px;
+                        }
+                    }
                 }
             }
 
             .social_links {
-                justify-content: space-around;
+                justify-content: flex-start;
                 padding: 0;
 
                 .box {
@@ -1744,7 +1772,44 @@ footer {
 }
 
 @media (max-width: 376px) {
-    .header .bottom{
+    .header .bottom {
         padding: 34% 5% 5%;
     }
+}
+
+/*** iPhone and iOS Form Input Zoom Fixes ***/
+/* Fix Input Zoom on devices older than iPhone 5: */
+@media screen and (device-aspect-ratio: 2/3) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"]{ font-size: 14px; }
+}
+
+/* Fix Input Zoom on iPhone 5, 5C, 5S, iPod Touch 5g */
+@media screen and (device-aspect-ratio: 40/71) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="url"]{ font-size: 14px; }
+}
+
+/* Fix Input Zoom on iPhone 6, iPhone 6s, iPhone 7  */
+@media screen and (device-aspect-ratio: 375/667) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"], 
+    input[type="tel"], input[type="url"]{ font-size: 14px; }
+}
+
+/* Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus, iPhone 8, iPhone X, XS, XS Max  */
+@media screen and (device-aspect-ratio: 9/16) {
+    select, textarea, input[type="text"], input[type="password"],
+    input[type="datetime"], input[type="datetime-local"],
+    input[type="date"], input[type="month"], input[type="time"],
+    input[type="week"], input[type="number"], input[type="email"],
+    input[type="tel"], input[type="url"]{ font-size: 14px; }
 }
