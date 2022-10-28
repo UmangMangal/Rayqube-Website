@@ -403,7 +403,7 @@
         <div class="top">
             <h2 data-aos="fade-right" data-aos-offset="100" data-aos-delay="10" data-aos-duration="1000"
                 data-aos-easing="ease-in-out">See what we're<br>capable of</h2>
-            <a href="./images/Rayqube_Credentials.pdf" download>Download our<br>crendentials here!</a>
+            <a href="javascript:void(0)" id="crendentials">Download our<br>crendentials here!</a>
         </div>
         <video src="./images/video.mp4" controls poster="./images/video.png"></video>
     </div>
@@ -450,6 +450,20 @@
             </div>
         </div>
     </footer>
+
+    <div class="custom_modal_container" id="crendentials_modal" style="display: none;">
+        <div class="backdrop"></div>
+        <div class="modal_content">
+            <div class="modal_body">
+                <input type="text" name="name" id="name" placeholder="Name">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <div class="btn_box">
+                    <button>Submit</button>
+                    <button class="close">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -471,6 +485,13 @@
                 $(this).parent().siblings(".content_box").children(".detail_box").removeClass("active");
                 $(this).toggleClass('active');
                 $(this).siblings('.detail_box').toggleClass("active")
+            })
+
+            $("#crendentials").click(function(){
+                $("#crendentials_modal").fadeIn();
+            })
+            $("#crendentials_modal .close").click(function(){
+                $("#crendentials_modal").fadeOut();
             })
         })
     </script>

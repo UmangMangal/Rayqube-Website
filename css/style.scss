@@ -610,7 +610,7 @@ textarea {
 
     .marquee>img {
         height: 40px !important;
-        width: auto!important;
+        width: auto !important;
         margin: 0 40px;
     }
 
@@ -807,6 +807,64 @@ footer {
 
             .box:not(:last-child) {
                 margin-right: 20px;
+            }
+        }
+    }
+}
+
+.custom_modal_container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+
+    .backdrop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.30);
+    }
+
+    .modal_content {
+        width: 300px;
+        background: #E0E0E0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 10px;
+        padding: 24px 20px 20px;
+        transform: translate(-50%, -50%);
+
+        input {
+            height: 36px;
+        }
+
+        .btn_box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            column-gap: 20px;
+            margin-top: 10px;
+
+            button {
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+                color: #fff;
+                background-color: $orange;
+                padding: 12px 40px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                width: calc(50% - 10px);
+
+                &:last-child {
+                    background: none;
+                    color: #333333;
+                }
             }
         }
     }
@@ -1746,14 +1804,17 @@ footer {
             .countries {
                 padding-left: 0px;
                 column-gap: 24px;
+
                 p {
                     font-size: 14px;
                     margin-bottom: 20px;
-                    &:nth-child(2){
-                        &::after{
+
+                    &:nth-child(2) {
+                        &::after {
                             right: -14px;
                         }
-                        &::before{
+
+                        &::before {
                             left: -14px;
                         }
                     }
@@ -1782,36 +1843,82 @@ footer {
 /*** iPhone and iOS Form Input Zoom Fixes ***/
 /* Fix Input Zoom on devices older than iPhone 5: */
 @media screen and (device-aspect-ratio: 2/3) {
-    select, textarea, input[type="text"], input[type="password"],
-    input[type="datetime"], input[type="datetime-local"],
-    input[type="date"], input[type="month"], input[type="time"],
-    input[type="week"], input[type="number"], input[type="email"],
-    input[type="url"]{ font-size: 14px; }
+
+    select,
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"] {
+        font-size: 14px;
+    }
 }
 
 /* Fix Input Zoom on iPhone 5, 5C, 5S, iPod Touch 5g */
 @media screen and (device-aspect-ratio: 40/71) {
-    select, textarea, input[type="text"], input[type="password"],
-    input[type="datetime"], input[type="datetime-local"],
-    input[type="date"], input[type="month"], input[type="time"],
-    input[type="week"], input[type="number"], input[type="email"],
-    input[type="url"]{ font-size: 14px; }
+
+    select,
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="url"] {
+        font-size: 14px;
+    }
 }
 
 /* Fix Input Zoom on iPhone 6, iPhone 6s, iPhone 7  */
 @media screen and (device-aspect-ratio: 375/667) {
-    select, textarea, input[type="text"], input[type="password"],
-    input[type="datetime"], input[type="datetime-local"],
-    input[type="date"], input[type="month"], input[type="time"],
-    input[type="week"], input[type="number"], input[type="email"], 
-    input[type="tel"], input[type="url"]{ font-size: 14px; }
+
+    select,
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"] {
+        font-size: 14px;
+    }
 }
 
 /* Fix Input Zoom on iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus, iPhone 8, iPhone X, XS, XS Max  */
 @media screen and (device-aspect-ratio: 9/16) {
-    select, textarea, input[type="text"], input[type="password"],
-    input[type="datetime"], input[type="datetime-local"],
-    input[type="date"], input[type="month"], input[type="time"],
-    input[type="week"], input[type="number"], input[type="email"],
-    input[type="tel"], input[type="url"]{ font-size: 14px; }
+
+    select,
+    textarea,
+    input[type="text"],
+    input[type="password"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="date"],
+    input[type="month"],
+    input[type="time"],
+    input[type="week"],
+    input[type="number"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="url"] {
+        font-size: 14px;
+    }
 }
