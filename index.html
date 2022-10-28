@@ -489,9 +489,17 @@
 
             $("#crendentials").click(function(){
                 $("#crendentials_modal").fadeIn();
+                $('body').css('overflow-y', 'hidden');
             })
+
+            $("#crendentials_modal .backdrop").click(function(){
+                $("#crendentials_modal").fadeOut();
+                $('body').css('overflow-y', 'auto');
+            })
+
             $("#crendentials_modal .close").click(function(){
                 $("#crendentials_modal").fadeOut();
+                $('body').css('overflow-y', 'auto');
             })
         })
     </script>
