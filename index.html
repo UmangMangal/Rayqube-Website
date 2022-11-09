@@ -72,9 +72,9 @@
 
     <div class="services_container">
         <h1 data-aos="fade-right" data-aos-offset="100" data-aos-delay="10" data-aos-duration="1000"
-            data-aos-easing="ease-in-out">Right from the <span>conceptualising</span></h1>
+            data-aos-easing="ease-in-out">Right from the <span>conceptualising</span> stage</h1>
         <h1 data-aos="fade-left" data-aos-offset="100" data-aos-delay="10" data-aos-duration="1000"
-            data-aos-easing="ease-in-out">stage to on-site <span>implementation</span>,</h1>
+            data-aos-easing="ease-in-out">to on-site <span>implementation</span>,</h1>
         <div class="text_box">
             <p>we <span>design, develop, and manage</span> <br>interactive brand experiences in-house.</p>
         </div>
@@ -107,19 +107,20 @@
                 </div>
 
                 <div class="box">
-                    <div class="image_flip_card one">
-                        <div class="content">
-                            <div class="front" style="background-image: url('./images/7.jpg');"></div>
-                            <div class="back" style="background-image: url('./images/8.png');"></div>
-                        </div>
-                    </div>
-
                     <div class="image_flip_card two">
                         <div class="content">
                             <div class="front" style="background-image: url('./images/9.png');"></div>
                             <div class="back" style="background-image: url('./images/10.png');"></div>
                         </div>
                     </div>
+
+                    <div class="image_flip_card one">
+                        <div class="content">
+                            <div class="front" style="background-image: url('./images/7.jpg');"></div>
+                            <div class="back" style="background-image: url('./images/8.png');"></div>
+                        </div>
+                    </div>
+                    
                 </div>
 
             </div>
@@ -320,7 +321,7 @@
     </div>
 
     <div class="client_container">
-        <h1>Names that <b>trust</b> us</h1>
+        <h1>Names that trust us</h1>
         <div class="marquee-wrapper">
             <div class="marquee" style="animation-duration: 10s;">
                 <img src="./images/logo/Abu dhabi police.png" class="marqueelogo" style="width: auto; max-width: none;">
@@ -403,7 +404,7 @@
         <div class="top">
             <h2 data-aos="fade-right" data-aos-offset="100" data-aos-delay="10" data-aos-duration="1000"
                 data-aos-easing="ease-in-out">See what we're<br>capable of</h2>
-            <a href="javascript:void(0)" id="crendentials">Download our<br>crendentials here!</a>
+            <a href="javascript:void(0)" id="crendentials">Download our<br>credentials here!</a>
         </div>
         <video src="./images/video.mp4" controls poster="./images/video.png"></video>
     </div>
@@ -411,7 +412,6 @@
     <footer>
         <div class="left">
             <h4>Just say Hello!</h4>
-            <p>Let us know more about you.</p>
             <div class="form_box">
                 <div class="two_input">
                     <input type="text" name="name" placeholder="Name" id="">
@@ -420,7 +420,7 @@
                 <input type="email" placeholder="Email">
                 <textarea name="" placeholder="Message" id="" rows="5"></textarea>
                 <button>Submit</button>
-                <button>Contact Us</button>
+                <button id="contact">Contact Us</button>
             </div>
         </div>
         <div class="right">
@@ -432,7 +432,7 @@
             </div>
             <div class="detail">
                 <img src="./images/mail.png" class="img_responisve" style="width: 18px;">
-                <p>info@rayqube.com</p>
+                <p><a href="mailto:info@rayqube.com">info@rayqube.com</a></p>
             </div>
             <div class="detail">
                 <img src="./images/phone.png" class="img_responisve" style="width: 16px;">
@@ -444,26 +444,45 @@
                 <p>INDIA</p>
             </div>
             <div class="social_links">
-                <div class="box"><img src="./images/facebook.png" class="img_responsive"></div>
-                <div class="box"><img src="./images/linkedin.png" class="img_responsive"></div>
-                <div class="box"><img src="./images/instagram.png" class="img_responsive"></div>
+                <div class="box"><a href="https://www.facebook.com/rayqubeftech"><img src="./images/facebook.png" class="img_responsive"></a></div>
+                <div class="box"><a href="https://www.linkedin.com/company/27164961/admin/"><img src="./images/linkedin.png" class="img_responsive"></a></div>
+                <div class="box"><a href="https://www.instagram.com/rayqubefuturetech/?hl=en"><img src="./images/instagram.png" class="img_responsive"></a></div>
             </div>
         </div>
     </footer>
 
     <div class="custom_modal_container" id="crendentials_modal" style="display: none;">
         <div class="backdrop"></div>
+        
         <div class="modal_content">
+            <div class="close">X</div>
             <div class="modal_body">
                 <input type="text" name="name" id="name" placeholder="Name">
                 <input type="email" name="email" id="email" placeholder="Email">
-                <div class="btn_box">
+                <button>Download Now</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="custom_modal_container" id="contact_modal" style="display: none;">
+        <div class="backdrop"></div>
+        
+        <div class="modal_content">
+            <div class="close">X</div>
+            <div class="modal_body">
+                <div class="form_box">
+                    <div class="two_input">
+                        <input type="text" name="name" placeholder="Name" id="">
+                        <input type="tel" name="number" placeholder="Phone Number" id="">
+                    </div>
+                    <input type="email" placeholder="Email">
+                    <textarea name="" placeholder="Message" id="" rows="5"></textarea>
                     <button>Submit</button>
-                    <button class="close">Close</button>
                 </div>
             </div>
         </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -499,6 +518,21 @@
 
             $("#crendentials_modal .close").click(function(){
                 $("#crendentials_modal").fadeOut();
+                $('body').css('overflow-y', 'auto');
+            })
+
+            $("#contact").click(function(){
+                $("#contact_modal").fadeIn();
+                $('body').css('overflow-y', 'hidden');
+            })
+
+            $("#contact_modal .backdrop").click(function(){
+                $("#contact_modal").fadeOut();
+                $('body').css('overflow-y', 'auto');
+            })
+
+            $("#contact_modal .close").click(function(){
+                $("#contact_modal").fadeOut();
                 $('body').css('overflow-y', 'auto');
             })
         })
