@@ -1534,10 +1534,10 @@ footer {
                         &:nth-of-type(3) {
                             .image_flip_card {
                                 &.one {
-                                    width: 20.318vw;
-                                    height: 26vw;
-                                    margin-top: 10px;
-                                    margin-bottom: 12px;
+                                    width: 26.318vw;
+                                    height: 30vw;
+                                    margin-left: -20vw;
+                                    
 
                                     &::after {
                                         content: url('../images/pin.png');
@@ -1549,9 +1549,10 @@ footer {
                                 }
 
                                 &.two {
-                                    width: 26.318vw;
-                                    height: 30vw;
-                                    margin-left: -20vw;
+                                    width: 20.318vw;
+                                    height: 26vw;
+                                    margin-top: 10px;
+                                    margin-bottom: 12px;
 
                                 }
                             }
