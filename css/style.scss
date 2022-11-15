@@ -319,6 +319,13 @@ textarea {
 
     .text_box {
         padding: 0 5%;
+        p{
+            br{
+                &.mobile{
+                    display: none;
+                }
+            }
+        }
     }
 
     p {
@@ -1432,8 +1439,10 @@ footer {
         }
 
         .bottom {
-            margin-top: 230px;
-
+            margin-top: 250px;
+            &.virtual{
+                margin-top: 330px;
+            }
             .points_container {
                 width: 66%;
                 margin: 0 auto;
@@ -1464,6 +1473,14 @@ footer {
 
         .text_box {
             padding: 0 4%;
+            p{
+                br{
+                    display: none;
+                    &.mobile{
+                        display: inline-block;
+                    }
+                }
+            }
         }
 
         p {
