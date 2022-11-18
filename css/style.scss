@@ -882,7 +882,7 @@ footer {
             height: 36px;
         }
 
-        button {
+        .btn {
             display: block;
             font-size: 14px;
             font-weight: 500;
@@ -893,6 +893,8 @@ footer {
             border-radius: 4px;
             cursor: pointer;
             margin: 10px auto 0;
+            text-align: center;
+            text-decoration: none;
         }
     }
 }
